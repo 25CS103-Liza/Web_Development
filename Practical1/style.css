@@ -1,0 +1,28 @@
+body {
+    font-family: Arial;
+    background-color: #f2f2f2;
+    margin: 30px;
+}
+
+h1 {
+    color: blue;
+}
+
+nav {
+    background-color: black;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+input {
+    padding: 8px;
+}
+
+button {
+    padding: 10px 20px;
+}
