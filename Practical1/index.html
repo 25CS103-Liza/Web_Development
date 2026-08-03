@@ -1,33 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Portal</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+    <div class="page-wrapper">
+        <header>
+            <h1>Student Portal</h1>
+            <p>Access your portal to view courses, attendance, results, and campus events.</p>
+        </header>
 
-    <h1>Student Portal</h1>
+        <main>
+            <section class="login-section">
+                <h2>Login</h2>
 
-    <h2>Login</h2>
+                <form>
+                    <label for="student-id">Student ID:</label>
+                    <input type="text" id="student-id" name="student-id" placeholder="Enter your student ID" required>
 
-    <form>
-        <label>Student ID:</label>
-        <input type="text">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
-        <br><br>
+                    <div class="button-group">
+                        <button type="submit" class="button-link">Login</button>
+                    </div>
 
-        <label>Password:</label>
-        <input type="password">
+                    <p id="form-message" class="form-message" aria-live="polite"></p>
+                </form>
+            </section>
+        </main>
 
-        <br><br>
-
-        <a href="dashboard.html">
-            <button type="button">Login</button>
-        </a>
-    </form>
-
+        <footer>
+            <p>&copy; 2026 Student Portal</p>
+        </footer>
+    </div>
 </body>
 
 </html>
